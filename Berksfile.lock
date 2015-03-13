@@ -10,6 +10,12 @@ DEPENDENCIES
     revision: 72bd5e3507056e5c931ee0cf7516ce1bfbce6d51
   git
   mysql (~> 5.5.4)
+  rails_gem_dependencies-tlq
+    git: git://github.com/TalkingQuickly/rails_gem_dependencies-tlq.git
+    revision: f62ff22492dd9a2c31cd856de176c19f0fbe2d73
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
   sudo
     git: git://github.com/opscode-cookbooks/sudo.git
     revision: 2784a1847ca6aa5b98422be7ef47c1f3ad12d73a
@@ -30,8 +36,15 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  java (1.31.0)
   mysql (5.5.4)
     yum-mysql-community (>= 0.0.0)
+  rails_gem_dependencies-tlq (0.0.3)
+    apt (>= 0.0.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  ruby_build (0.8.0)
   runit (1.5.16)
     build-essential (>= 0.0.0)
     yum (~> 3.0)

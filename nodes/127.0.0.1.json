@@ -3,6 +3,17 @@
     // mysql root password
     "server_root_password": "123456"
   },
+  "rbenv":{
+    "rubies": [
+      "2.1.5"
+    ],
+    "global" : "2.1.5",
+    "gems": {
+      "2.1.5" : [
+        {"name": "bundler"}
+      ]
+    }
+  },
   "authorization": {
     "sudo": {
       // the apps user specifically gets sudo rights
@@ -20,6 +31,7 @@
   "run_list":
   [
     "role[server]",
-    "role[mysql-server]"
+    "role[mysql-server]",
+    "role[rails-app]"
   ]
 }
