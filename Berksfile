@@ -11,3 +11,5 @@ cookbook 'mysql', '~> 5.5.4'
 
 cookbook 'rails_gem_dependencies-tlq', github: 'TalkingQuickly/rails_gem_dependencies-tlq'
 cookbook 'rbenv', github: 'fnichol/chef-rbenv'
+
+cookbook 'nginx', github: 'miketheman/nginx'
