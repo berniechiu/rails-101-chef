@@ -9,6 +9,7 @@ DEPENDENCIES
     git: git://github.com/edelight/chef-solo-search.git
     revision: 72bd5e3507056e5c931ee0cf7516ce1bfbce6d51
   git
+  mysql (~> 5.5.4)
   sudo
     git: git://github.com/opscode-cookbooks/sudo.git
     revision: 2784a1847ca6aa5b98422be7ef47c1f3ad12d73a
@@ -29,6 +30,8 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  mysql (5.5.4)
+    yum-mysql-community (>= 0.0.0)
   runit (1.5.16)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
@@ -40,3 +43,5 @@ GRAPH
   yum (3.5.3)
   yum-epel (0.6.0)
     yum (~> 3.0)
+  yum-mysql-community (0.1.14)
+    yum (>= 3.0)

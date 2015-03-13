@@ -1,4 +1,8 @@
 {
+  "mysql": {
+    // mysql root password
+    "server_root_password": "123456"
+  },
   "authorization": {
     "sudo": {
       // the apps user specifically gets sudo rights
@@ -15,6 +19,7 @@
   },
   "run_list":
   [
-    "role[server]"
+    "role[server]",
+    "role[mysql-server]"
   ]
 }

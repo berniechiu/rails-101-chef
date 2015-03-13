@@ -6,3 +6,5 @@ cookbook 'chef-solo-search', github: 'edelight/chef-solo-search'
 cookbook 'build-essential', github: 'opscode-cookbooks/build-essential'
 cookbook 'sudo', github: 'opscode-cookbooks/sudo'
 cookbook 'users', github: 'opscode-cookbooks/users'
+
+cookbook 'mysql', '~> 5.5.4'
