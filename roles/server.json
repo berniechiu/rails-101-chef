@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "description": "A server of some kind.",
+  "default_attributes": {
+    "apt" : {
+      "unattended_upgrades" : {
+        "enable" : true,
+        "allowed_origins" : [
+          "${distro_id} stable",
+          "${distro_id} ${distro_codename}-security"
+        ],
+        "automatic_reboot" : true
+      }
+    },
+    "authorization": {
+      "sudo": {
+        // everyone in the group sysadmin gets sudo rights
+        "groups": ["sysadmin"],
+        // the apps user specifically gets sudo rights
+        "users": ["apps"],
+        // whether a user with sudo rights can execute sudo
+        // commands without entering their password.
+        "passwordless": true
+      }
+    }
+  },
+  "json_class": "Chef::Role",
+  "run_list": [
+    // required for building from source
+    "recipe[build-essential::default]",
+    // required by the users cookbook when using chef solo
+    "recipe[chef-solo-search::default]",
+    // setup standard sysadmin users
+    "recipe[users::sysadmins]",
+    // enable unattended upgrades
+    "recipe[apt::unattended-upgrades]",
+    // make sure apps user has sudo rights
+    "recipe[sudo::default]",
+    "recipe[git::default]"
+  ],
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}

@@ -1,0 +1,42 @@
+DEPENDENCIES
+  apt
+    git: git://github.com/opscode-cookbooks/apt.git
+    revision: 6b899f970d8d7c62281ff7530dabb9a7e5551a86
+  build-essential
+    git: git://github.com/opscode-cookbooks/build-essential.git
+    revision: df39ccae99c338c861aed4046d3d840fb9ef968d
+  chef-solo-search
+    git: git://github.com/edelight/chef-solo-search.git
+    revision: 72bd5e3507056e5c931ee0cf7516ce1bfbce6d51
+  git
+  sudo
+    git: git://github.com/opscode-cookbooks/sudo.git
+    revision: 2784a1847ca6aa5b98422be7ef47c1f3ad12d73a
+  users
+    git: git://github.com/opscode-cookbooks/users.git
+    revision: 681e55dd044fffea7fb1d14a8cefb5d4e1d8e53d
+
+GRAPH
+  apt (2.6.1)
+  build-essential (2.1.3)
+  chef-solo-search (0.5.2)
+  chef_handler (1.1.6)
+  dmg (2.2.2)
+  git (4.1.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  runit (1.5.16)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  sudo (2.7.1)
+  users (1.8.2)
+  windows (1.36.6)
+    chef_handler (>= 0.0.0)
+  yum (3.5.3)
+  yum-epel (0.6.0)
+    yum (~> 3.0)

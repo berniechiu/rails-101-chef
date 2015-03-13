@@ -1,3 +1,4 @@
-/cookbooks/
-.vagrant/
-.bundle/
+cookbooks
+.vagrant
+.bundle
+data_bags/users/apps.json
