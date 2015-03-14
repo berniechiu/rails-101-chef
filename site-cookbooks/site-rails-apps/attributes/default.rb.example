@@ -1,0 +1,4 @@
+default['rails_app']['app_name'] = ''
+default['rails_app']['user'] = ''
+default['rails_app']['pass'] = ''
+default['rails_app']['secret_key'] = ''

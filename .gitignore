@@ -2,3 +2,4 @@ cookbooks
 .vagrant
 .bundle
 data_bags/users/apps.json
+site-cookbooks/site-rails-apps/attributes/default.rb

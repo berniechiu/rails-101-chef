@@ -19,6 +19,10 @@ DEPENDENCIES
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
     revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  site-rails-app
+    path: site-cookbooks/site-rails-apps
+  site-unicorn
+    path: site-cookbooks/site-unicorn
   sudo
     git: git://github.com/opscode-cookbooks/sudo.git
     revision: 2784a1847ca6aa5b98422be7ef47c1f3ad12d73a
@@ -63,6 +67,8 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  site-rails-app (0.1.0)
+  site-unicorn (0.1.0)
   sudo (2.7.1)
   users (1.8.2)
   windows (1.36.6)

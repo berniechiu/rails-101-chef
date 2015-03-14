@@ -19,7 +19,8 @@
   "run_list": [
     "rails_gem_dependencies-tlq",
     "ruby_build",
-    "rbenv::system"
+    "rbenv::system",
+    "recipe[site-rails-app]"
   ],
   "chef_type": "role",
   "override_attributes": {

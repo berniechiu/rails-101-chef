@@ -1,0 +1,8 @@
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: database
+  pool: 5
+  username: <%= node['rails_app']['user'] %>
+  password: <%= node['rails_app']['pass'] %>
+  socket: /var/run/mysqld/mysqld.sock
