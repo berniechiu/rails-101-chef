@@ -13,3 +13,5 @@ cookbook 'rails_gem_dependencies-tlq', github: 'TalkingQuickly/rails_gem_depende
 cookbook 'rbenv', github: 'fnichol/chef-rbenv'
 
 cookbook 'nginx', github: 'miketheman/nginx'
+cookbook 'site-unicorn', path: 'site-cookbooks/site-unicorn'
+cookbook 'site-rails-app', path: 'site-cookbooks/site-rails-apps'
