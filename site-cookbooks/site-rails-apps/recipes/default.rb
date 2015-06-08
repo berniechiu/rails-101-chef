@@ -10,21 +10,21 @@
 config_path = "/home/apps/#{node['rails_app']['app_name']}/shared/config"
 
 directory config_path do
-  owner "root"
-  group "root"
+  owner "apps"
+  group "apps"
   recursive true
 end
 
 template config_path + "/database.yml" do
   source "database.yml.erb"
-  owner "root"
-  group "root"
+  owner "apps"
+  group "apps"
   mode "0644"
 end
 
 template config_path + "/secrets.yml" do
   source "secrets.yml.erb"
-  owner "root"
-  group "root"
+  owner "apps"
+  group "apps"
   mode "0644"
 end
